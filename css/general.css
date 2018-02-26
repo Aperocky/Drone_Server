@@ -1,0 +1,10 @@
+/* Applicable to Entire page */
+body {
+  background-color: #eee;
+  margin: 0 auto;
+  font-family: Helvetica, Garamond, sans-serif;
+}
+
+.links {
+  text-decoration: none;
+}

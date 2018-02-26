@@ -1,0 +1,42 @@
+body {
+	font-family: Georgia, serif;
+	background-color: #aaa;
+	color: #222;
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	width: 800px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	margin: 50px auto;
+	min-height: 800px;
+	padding: 20px 40px;
+	background-color: #eee;
+	padding-bottom: 100px;
+}
+
+.images {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	grid-column: 0/1;
+	overflow: hidden;
+	/*background-color: orange;*/
+}
+
+img.center {
+	display: block;
+	margin: 20 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 400px 400px;
+	overflow: hidden;
+}
+
+.grid p{
+	grid-column: auto;
+}

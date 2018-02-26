@@ -6,7 +6,7 @@
   function insert_subject($subject) {
     global $db;
 
-    $sql = "INSERT INTO ". DBNAME;
+    $sql = "INSERT INTO ". CURR_TABLE;
     $sql .= " (time, device, payload) ";
     $sql .= "VALUES (";
     $sql .= "'" . $subject['time'] . "',";

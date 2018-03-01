@@ -17,8 +17,11 @@ class Sender:
         self.data = data
 
     def send(self):
-        r = requests.post(self.url, data = self.data, headers=self.header)
-        print('status: ', r.status_code, r.reason)
+        try:
+            r = requests.post(self.url, data = self.data, headers=self.header)
+            print('status: ', r.status_code, r.reason)
+        except requests.exceptions.RequestException as e:
+            print(e)
 
 # Dummy payload to dummy database
 
@@ -35,6 +38,7 @@ def payload_gen():
 
 if __name__ == '__main__':
     sender = Sender()
+    time.sleep(10)
     for i in range(3):
         url, data = payload_gen()
         sender.renew(url, data)

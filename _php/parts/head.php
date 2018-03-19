@@ -6,6 +6,7 @@
 <html>
   <header>
     <title> <?php echo $page_title; ?></title>
-    <link href='css/pi_guide.css' rel='stylesheet' />
+    <link href='_css/sleek.css' rel='stylesheet' />
   </header>
   <body>
+    <div id='main'>

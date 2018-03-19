@@ -1,0 +1,79 @@
+body {
+	font-family: Georgia, serif;
+	background-color: #aaa;
+	color: #222;
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	width: 80%;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	margin: 50px auto;
+	min-height: 800px;
+	padding: 20px 40px;
+	background-color: #eee;
+	padding-bottom: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* h2 {
+  text-align: center;
+} */
+
+/* Following are for the homeworks */
+img{
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+
+ul#firstlist li{
+	display: inline;
+}
+
+p.question{
+	font-family: sans-serif;
+	color: blue;
+}
+
+/* Following are for styling tables */
+.table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table td:nth-child(2){
+	width: 100px;
+}
+
+.table td:nth-last-child(2){
+	width: 25%;
+}
+
+/* Following are for styling input boxes */
+textarea{
+	width: 90%;
+}

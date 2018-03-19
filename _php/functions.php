@@ -3,26 +3,37 @@
 // ------------------ DATABASE QUERY FUNCTIONS ----------------------
 
   // This function insert a regular entree into time_stamps table.
-  function insert_subject($subject) {
+  function insert_subject($subject, $object) {
     global $db;
 
     $sql = "INSERT INTO ". CURR_TABLE;
-    $sql .= " (time, device, payload) ";
+    $sql .= " (time, device, payload, picture_location) ";
     $sql .= "VALUES (";
     $sql .= "'" . $subject['time'] . "',";
     $sql .= "'" . $subject['device'] . "',";
     $sql .= "'" . $subject['payload'] . "'";
+    if ($object !== 0){
+      $sql .= ",'". mysqli_real_escape_string($db, $object) ."'";
+    } else {
+      $sql .= ",'NULL'";
+    }
     $sql .= ")";
     $result = mysqli_query($db, $sql);
-    // For INSERT statements, $result is true/false
-    echo $result;
+    // if ($object !== 0){
+    //   $sql = "INSERT INTO ". CURR_TABLE;
+    //   $sql .= " (picture) ";
+    //   $sql .= "VALUES (";
+    //   $sql .= "'" . mysqli_real_escape_string($db, $object) . "'";
+    //   $sql .= ")";
+    //   $result = mysqli_query($db, $sql);
+    // }
+    // return $sql;
     if($result) {
-      return true;
+      return $sql;
     } else {
-      // INSERT failed
-      echo mysqli_error($db);
+      $error = mysqli_error($db);
       db_close($db);
-      exit;
+      return $error;
     }
   }
 
@@ -34,5 +45,15 @@
     exit;
   }
 
+// ------------------------- QUERY FUNCTIONS ------------------------
+
+  function find_records() {
+    global $db;
+    $sql = "SELECT * FROM time_stamps ";
+    $sql .= "ORDER BY id ASC";
+    $result = mysqli_query($db, $sql);
+    confirm_result_set($result);
+    return $result;
+  }
 
 ?>

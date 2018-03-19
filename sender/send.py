@@ -12,16 +12,24 @@ class Sender:
         self.url = url
         self.data = data
 
-    def renew(self, url, data):
+    def renew(self, url, data, files):
         self.url = url
         self.data = data
+        self.files = files
 
     def send(self):
         try:
-            r = requests.post(self.url, data = self.data, headers=self.header)
+            r = requests.post(self.url, data = self.data, files=self.files, headers=self.header)
             print('status: ', r.status_code, r.reason)
         except requests.exceptions.RequestException as e:
             print(e)
+
+    # def sendfile(self):
+    #     try:
+    #         r = request.post(self.url, files=self.files, headers=self.header)
+    #         print('status: ', r.status_code, r.reason)
+    #     except requests.exceptions.RequestException as e:
+    #         print(e)
 
 # Dummy payload to dummy database
 
@@ -29,18 +37,19 @@ def payload_gen():
     curr_time = (datetime.datetime.now().strftime("%I:%M:%S, %b %d, %Y"))
     my_mac = (':'.join(['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,8*6,8)][::-1]))
     payload = 'MWAHAHA, THIS IS ROCKY'
-
-    # my_url = 'http://localhost/Drone-Watch/create.php'
-    my_url = 'http://apps.hal.pratt.duke.edu/dronedetection/create.php'
+    my_url = 'http://localhost/Drone-Watch/create.php'
+    # my_url = 'http://apps.hal.pratt.duke.edu/dronedetection/create.php'
     mydata = {'time': curr_time, 'device': my_mac, 'payload': payload}
+    myfile = {'files': open('small.jpg', 'rb')}
     print(mydata)
-    return my_url, mydata
+    print(myfile)
+    return my_url, mydata, myfile
 
 if __name__ == '__main__':
     sender = Sender()
     time.sleep(10)
-    for i in range(3):
-        url, data = payload_gen()
-        sender.renew(url, data)
+    for i in range(5):
+        url, data, files = payload_gen()
+        sender.renew(url, data, files)
         sender.send()
         time.sleep(3)

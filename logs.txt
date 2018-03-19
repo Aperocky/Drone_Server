@@ -1,0 +1,140 @@
+08:51:30, Mar 17, 2018
+/private/var/tmp/php3PZYnk
+/Users/aperocky/Sites/Drone-Watchpics/08:51:30, Mar 17, 2018.jpg
+array (
+  'time' => '08:51:30, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: 
+
+
+
+/Users/aperocky/Sites/Drone-Watchpics/.jpg
+array (
+  'time' => '',
+  'device' => '',
+  'payload' => '',
+)
+status: 
+
+08:55:16, Mar 17, 2018
+/private/var/tmp/phpXp3j9R
+/Users/aperocky/Sites/Drone-Watch/pics/08:55:16, Mar 17, 2018.jpg
+array (
+  'time' => '08:55:16, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: Unknown column 'picture' in 'field list'
+
+08:55:55, Mar 17, 2018
+/private/var/tmp/phpd8Fnpq
+/Users/aperocky/Sites/Drone-Watch/pics/08:55:55, Mar 17, 2018.jpg
+array (
+  'time' => '08:55:55, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('08:55:55, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/08:55:55, Mar 17, 2018.jpg')
+
+09:05:09, Mar 17, 2018
+/private/var/tmp/phpQI9tBn
+/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg
+array (
+  'time' => '09:05:09, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:05:09, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg')
+
+09:05:09, Mar 17, 2018
+/private/var/tmp/phpmcNflT
+/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg
+array (
+  'time' => '09:05:09, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:05:09, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg')
+
+09:05:09, Mar 17, 2018
+/private/var/tmp/phpUVAKRW
+/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg
+array (
+  'time' => '09:05:09, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:05:09, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg')
+
+09:05:09, Mar 17, 2018
+/private/var/tmp/phpKHkFIc
+/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg
+array (
+  'time' => '09:05:09, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:05:09, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg')
+
+09:05:09, Mar 17, 2018
+/private/var/tmp/phpDQr8Pe
+/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg
+array (
+  'time' => '09:05:09, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:05:09, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:05:09, Mar 17, 2018.jpg')
+
+09:06:03, Mar 17, 2018
+/private/var/tmp/phpb4djnp
+/Users/aperocky/Sites/Drone-Watch/pics/09:06:03, Mar 17, 2018.jpg
+array (
+  'time' => '09:06:03, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:06:03, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:06:03, Mar 17, 2018.jpg')
+
+09:06:06, Mar 17, 2018
+/private/var/tmp/phpaTyJ9P
+/Users/aperocky/Sites/Drone-Watch/pics/09:06:06, Mar 17, 2018.jpg
+array (
+  'time' => '09:06:06, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:06:06, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:06:06, Mar 17, 2018.jpg')
+
+09:06:09, Mar 17, 2018
+/private/var/tmp/phpItlenj
+/Users/aperocky/Sites/Drone-Watch/pics/09:06:09, Mar 17, 2018.jpg
+array (
+  'time' => '09:06:09, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:06:09, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:06:09, Mar 17, 2018.jpg')
+
+09:06:12, Mar 17, 2018
+/private/var/tmp/phpk73C2K
+/Users/aperocky/Sites/Drone-Watch/pics/09:06:12, Mar 17, 2018.jpg
+array (
+  'time' => '09:06:12, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:06:12, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:06:12, Mar 17, 2018.jpg')
+
+09:06:15, Mar 17, 2018
+/private/var/tmp/phpYWJUMf
+/Users/aperocky/Sites/Drone-Watch/pics/09:06:15, Mar 17, 2018.jpg
+array (
+  'time' => '09:06:15, Mar 17, 2018',
+  'device' => '30:35:ad:b4:5a:6a',
+  'payload' => 'MWAHAHA, THIS IS ROCKY',
+)
+status: INSERT INTO time_stamps (time, device, payload, picture_location) VALUES ('09:06:15, Mar 17, 2018','30:35:ad:b4:5a:6a','MWAHAHA, THIS IS ROCKY','/Users/aperocky/Sites/Drone-Watch/pics/09:06:15, Mar 17, 2018.jpg')
+

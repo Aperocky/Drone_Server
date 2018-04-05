@@ -7,6 +7,7 @@
   define("PROJECT_PATH", dirname(PHP_PATH));
   define("RESOURCES_PATH", PROJECT_PATH . '/Resources');
   define("PARTS_PATH", PHP_PATH . '/parts');
+  define("WEB_ROOT", 'http://' . $_SERVER['HTTP_HOST']);
 
   require_once('functions.php');
 

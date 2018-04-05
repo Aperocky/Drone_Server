@@ -12,11 +12,11 @@
       $return_arr = array();
       $return_arr['data'] = $result;
       $relpath = '';
-      if(isset($result['hook']) && ! $result['hook'] === ""){
+      if(isset($result['hook'])){
         $abspath = $result['hook'];
         $verdict = explode("/", $abspath);
         $verdict = end($verdict);
-        $relpath = WEB_ROOT . '/pics/' . $verdict;
+        $relpath = WEB_ROOT . '/test/pics/' . $verdict;
       }
       echo $relpath;
       $return_arr['link'] = $relpath;

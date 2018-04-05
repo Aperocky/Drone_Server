@@ -24,25 +24,32 @@ class Sender:
             print(self.files)
             print(self.url)
             r = requests.post(self.url, data = self.data, files=self.files, headers=self.header)
-            print('status: ', r.status_code, r.reason)
-            print(r.content)
+            status = 'status: ' + str(r.status_code) + ' ' + r.reason
+            print(status)
+            content = r.content
+            print(content)
         except requests.exceptions.RequestException as e:
             print(e)
+        return status, content
 
-    # def sendfile(self):
-    #     try:
-    #         r = request.post(self.url, files=self.files, headers=self.header)
-    #         print('status: ', r.status_code, r.reason)
-    #     except requests.exceptions.RequestException as e:
-    #         print(e)
+class Logger:
 
-# Dummy payload to dummy database
+    def __init__(self, filename):
+        self.filename = filename
+
+    def logs(self, message):
+        with open(self.filename, 'a+') as log:
+            now = datetime.datetime.now()
+            nowstr = now.strftime('%Y-%m-%d, %H:%M:%S.%f')
+            log.write(nowstr + '\n')
+            log.write(message + '\n')
 
 # Simulating class
 class Simulate:
 
-    def __init__(self):
+    def __init__(self, pictures = True):
         self.chance = 0
+        self.pictures = pictures
         self.picpath = '/Users/aperocky/Sites/Drone-Watch/pics'
 
     def genchance(self):
@@ -59,7 +66,7 @@ class Simulate:
 
     def run(self):
         self.genchance()
-        if self.chance > 0.2:
+        if self.chance > 0.2 and self.pictures:
             fname = 'pics/' + self.runhook()
         else:
             fname = False
@@ -70,14 +77,14 @@ class Simulate:
         return payload, fname
 
 def payload_gen(sim):
-    curr_time = (datetime.datetime.now().strftime("%I:%M:%S, %b %d, %Y"))
+    curr_time = (datetime.datetime.now().strftime("%Y-%m-%d, %H:%M:%S"))
     my_mac = (':'.join(['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,8*6,8)][::-1]))
     payload, fname = sim.run()
     # payload = 'MWAHAHA, THIS IS ROCKY'
     mydata = {'time': curr_time, 'device': my_mac, 'payload': payload}
-    # my_url = 'http://localhost/Drone-Watch/create.php'
+    my_url = 'http://localhost/Drone-Watch/create.php'
     # my_url = 'http://apps.hal.pratt.duke.edu/dronedetection/create.php'
-    my_url = 'http://apps.hal.pratt.duke.edu/test/create.php'
+    # my_url = 'http://apps.hal.pratt.duke.edu/test/create.php'
     if fname == False:
         myfile = {}
     else:
@@ -86,11 +93,14 @@ def payload_gen(sim):
 
 if __name__ == '__main__':
     sender = Sender()
-    sim = Simulate()
+    sim = Simulate(pictures = False)
+    logger = Logger('log.txt')
     time.sleep(5)
     for i in range(10):
         url, data, files = payload_gen(sim)
         print(url, data, files)
         sender.renew(url, data, files)
-        sender.send()
+        logger.logs(str(data))
+        status, content = sender.send()
+        logger.logs(status + '\n' + str(content))
         time.sleep(3)

@@ -21,8 +21,7 @@
 
     // Select appropriate file for image
     $locpath = NULL;
-    if($object !== 0){
-      $log_str .= 'Im here';
+    if($object != 0){
       $picid = 0;
       while(true){
         $fullid = str_pad($picid, 5, '0', STR_PAD_LEFT);

@@ -3,3 +3,6 @@ logs.txt
 pics/
 usage.html
 Resources/
+*.txt
+sender/*.txt
+*.html

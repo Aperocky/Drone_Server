@@ -29,7 +29,9 @@ class Sender:
             content = r.content
             print(content)
         except requests.exceptions.RequestException as e:
+            status = 'status: error'
             print(e)
+            return status, 'PAGE FAILED TO LOAD: ' + str(e)
         return status, content
 
 class Logger:
@@ -77,7 +79,7 @@ class Simulate:
         return payload, fname
 
 def payload_gen(sim):
-    curr_time = (datetime.datetime.now().strftime("%Y-%m-%d, %H:%M:%S"))
+    curr_time = (datetime.datetime.now().strftime("%Y-%m-%d, %H:%M:%S.%f"))
     my_mac = (':'.join(['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,8*6,8)][::-1]))
     payload, fname = sim.run()
     # payload = 'MWAHAHA, THIS IS ROCKY'

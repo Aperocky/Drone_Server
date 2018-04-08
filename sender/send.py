@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 import numpy as np
 import uuid
@@ -84,9 +85,9 @@ def payload_gen(sim):
     payload, fname = sim.run()
     # payload = 'MWAHAHA, THIS IS ROCKY'
     mydata = {'time': curr_time, 'device': my_mac, 'payload': payload}
-    my_url = 'http://localhost/Drone-Watch/create.php'
+    # my_url = 'http://localhost/Drone-Watch/create.php'
     # my_url = 'http://apps.hal.pratt.duke.edu/dronedetection/create.php'
-    # my_url = 'http://apps.hal.pratt.duke.edu/test/create.php'
+    my_url = 'http://apps.hal.pratt.duke.edu/test/create.php'
     if fname == False:
         myfile = {}
     else:
